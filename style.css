@@ -171,3 +171,24 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
     .chart-container { padding: 20px; }
     .btn-contato { display: block; width: 100%; text-align: center; margin-top: 10px; }
 }
+/* Ajuste para o logo do Menu */
+.logo img {
+    display: block;
+    height: 35px; /* Ajuste a altura conforme necessário */
+    width: auto;
+}
+
+/* Ajuste para o logo principal da Hero */
+.hero-logo img {
+    max-width: 400px; /* Define um limite de largura para o logo grande */
+    width: 100%;      /* Garante que ele diminua em telas pequenas */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Responsividade para o logo principal */
+@media (max-width: 768px) {
+    .hero-logo img {
+        max-width: 250px; /* Logo menor no celular */
+    }
+}
