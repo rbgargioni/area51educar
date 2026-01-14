@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área 51 | Performance e Inovação</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -13,7 +13,7 @@
         <nav>
             <div class="logo">Área 51</div>
             <ul>
-                <li><a href="#home">Áreas</a></li>
+                <li><a href="#areas">Áreas</a></li>
                 <li><a href="#sobre">Quem Somos</a></li>
                 <li><a href="#cases">Cases</a></li>
                 <li><a href="#contato" class="btn-contato">Contato</a></li>
@@ -24,14 +24,12 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Área 51</h1>
-            <p>Projetamos impacto, entregamos performance.</p>
+            <p>Projetamos impacto, entregamos performance</p>
         </div>
 
         <div class="chart-container">
             <div class="chart-header">
-                <div class="chart-icon">
-                    <i data-lucide="trending-up"></i>
-                </div>
+                <div class="chart-icon"><i data-lucide="trending-up"></i></div>
                 <span>Crescimento</span>
             </div>
             <canvas id="growthChart"></canvas>
@@ -43,35 +41,41 @@
         </div>
     </section>
 
-    <section class="areas">
-        <h2>Áreas de Atuação</h2>
+    <section id="areas" class="light-section">
+        <div class="section-header">
+            <h2>Áreas de Atuação</h2>
+            <p>Quatro pilares que sustentam nossa missão de transformar realidades</p>
+        </div>
         <div class="grid-cards">
             <div class="card">
-                <i data-lucide="line-chart"></i>
-                <h3>Estratégia</h3>
-                <p>Projetos focados em resultados mensuráveis e visão de futuro.</p>
+                <div class="card-icon icon-yellow"><i data-lucide="book-open"></i></div>
+                <h3>Educação</h3>
+                <p>Conteúdos estratégicos aplicados à realidade de quem aprende, com o objetivo de gerar autonomia, visão e transformação.</p>
             </div>
             <div class="card">
-                <i data-lucide="lightbulb"></i>
+                <div class="card-icon icon-blue"><i data-lucide="rocket"></i></div>
                 <h3>Inovação</h3>
-                <p>Conectando tecnologias e pessoas para gerar impacto real.</p>
+                <p>Produtos e projetos desenhados para gerar impacto no mundo real. Conectando estratégias, tecnologias e pessoas.</p>
             </div>
             <div class="card">
-                <i data-lucide="users"></i>
+                <div class="card-icon icon-orange"><i data-lucide="star"></i></div>
+                <h3>Eventos</h3>
+                <p>Eventos com propósito, método e impacto real. Cada detalhe planejado com cuidado para gerar conexão e aprendizado.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon icon-green"><i data-lucide="hand-metal"></i></div>
                 <h3>Impacto</h3>
-                <p>Transformando realidades através da educação e diversidade.</p>
+                <p>Impacto que sai do discurso e vira ação. Projetos criados para transformar realidades de forma prática e mensurável.</p>
             </div>
         </div>
     </section>
 
-    <section id="contato" class="contato">
-        <h2>Vamos conversar?</h2>
-        <form id="form-contato">
-            <input type="text" placeholder="Seu nome completo" required>
-            <input type="email" placeholder="seu@email.com" required>
-            <textarea placeholder="Conte sobre seu projeto ou desafio..." rows="5"></textarea>
-            <button type="submit">Enviar mensagem</button>
-        </form>
+    <section id="sobre" class="white-section">
+        <div class="about-container">
+            <h2>Quem Somos</h2>
+            <p>A <strong>Área 51</strong> iniciou sua trajetória em 2015, na cidade de Porto Alegre, como um núcleo de inovação voltado à realização de cursos e workshops. Com o passar dos anos, ampliamos nossa atuação para os campos da educação, projetos e eventos.</p>
+            <p>Hoje, atuamos no desenvolvimento e execução de projetos que integram eventos, cursos, formações e editais, sempre com foco em transformação social.</p>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
