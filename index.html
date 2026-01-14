@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área 51 | Performance e Inovação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Área 51</div>
+            <ul>
+                <li><a href="#home">Áreas</a></li>
+                <li><a href="#sobre">Quem Somos</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#contato" class="btn-contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Área 51</h1>
+            <p>Projetamos impacto, entregamos performance.</p>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-header">
+                <div class="chart-icon">
+                    <i data-lucide="trending-up"></i>
+                </div>
+                <span>Crescimento</span>
+            </div>
+            <canvas id="growthChart"></canvas>
+            <div class="chart-footer">
+                <span>2015</span>
+                <span>2020</span>
+                <span>2025</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="areas">
+        <h2>Áreas de Atuação</h2>
+        <div class="grid-cards">
+            <div class="card">
+                <i data-lucide="line-chart"></i>
+                <h3>Estratégia</h3>
+                <p>Projetos focados em resultados mensuráveis e visão de futuro.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="lightbulb"></i>
+                <h3>Inovação</h3>
+                <p>Conectando tecnologias e pessoas para gerar impacto real.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="users"></i>
+                <h3>Impacto</h3>
+                <p>Transformando realidades através da educação e diversidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Vamos conversar?</h2>
+        <form id="form-contato">
+            <input type="text" placeholder="Seu nome completo" required>
+            <input type="email" placeholder="seu@email.com" required>
+            <textarea placeholder="Conte sobre seu projeto ou desafio..." rows="5"></textarea>
+            <button type="submit">Enviar mensagem</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
